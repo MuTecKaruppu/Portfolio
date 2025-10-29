@@ -1,0 +1,26 @@
+/* ///////////////////////////////////////////////////////  
+
+    1. Site Logo 
+
+    #. Responsive
+
+/////////////////////////////////////////////////////// */
+
+
+
+/** 
+    1. Site Logo 
+*/
+
+.site-logo > img { width: 1em; font-size: 50px; }
+
+
+/** 
+    #. Responsive
+*/
+
+@media screen and (max-width: 991px) {
+    
+    header.mt__header_wrapper { padding: 15px 0px; }
+
+}
