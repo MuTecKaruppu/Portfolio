@@ -33,7 +33,7 @@ export default function StartProject() {
 
     return (
         <>
-            <section className="mt__section_start_project section-space">
+            <section id="contact" className="mt__section_start_project section-space">
                 <div className="container">
                     <div className="row">
 

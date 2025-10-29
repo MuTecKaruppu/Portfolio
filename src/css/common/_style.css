@@ -43,3 +43,12 @@
 .theme_wrapper .content_grp > .category_items { font-size: .8em; text-transform: uppercase; letter-spacing: .1em; 
     color: var(--mt-scondery); text-shadow: 0 0 10px currentColor; }
 .theme_wrapper .content_grp > *:not(:last-child) { margin-bottom: 12px; }
+
+
+.theme_wrapper .image_wrapper { overflow: hidden; perspective: 400px; transform-style: preserve-3d; transition: var(--mt-transition); }
+.theme_wrapper .image_wrapper:before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--mt-primary);
+    opacity: 0; z-index: 1; mix-blend-mode: multiply; transition: var(--mt-transition); }
+.theme_wrapper:hover .image_wrapper:before { opacity: 0.4; }
+
+.theme_wrapper .image_wrapper img { scale: 1; transition: var(--mt-transition); width: 100%; height: 100%; object-fit: cover; object-position: center center; }
+.theme_wrapper:hover .image_wrapper img { scale: 1.1; }

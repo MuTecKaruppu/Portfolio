@@ -1,6 +1,8 @@
 import TypewriterComponent from "typewriter-effect"
-import Button from "../Button"
-import SocialLinks from "../widgets/SocialLinks"
+// import Button from "../Button"
+// import SocialLinks from "../widgets/SocialLinks"
+import ArrowUpRightIcon from "../CustomIcons/ArrowUpRightIcon"
+// import { Link } from "react-router-dom"
 
 export default function Mainbanner() {
     return (
@@ -27,8 +29,20 @@ export default function Mainbanner() {
                             <p>I’m a passionate Frontend Developer who loves turning ideas into interactive digital experiences. From sleek landing pages to full-scale web applications, I use tools like React.js, WordPress, Shopify, and JavaScript to build scalable and performance-driven solutions. I enjoy crafting interfaces that are not just functional, but also engaging and accessible to all users.</p>
 
                             <div className="mt-button-grp mt-5 d-flex gap-3 flex-wrap">
-                                <Button text="Let's Talk" to="#contact" />
-                                <Button text="Download Resume" to="#contact" />
+                                <a href="#contact" className="mt_button">
+                                    <span>Let's Talk <ArrowUpRightIcon className="ms-2" /></span>
+                                    <span>Let's Talk <ArrowUpRightIcon className="ms-2" /></span>
+                                </a>
+                                <button className="mt_button"
+                                    onClick={() => {
+                                        const link = document.createElement("a");
+                                        link.href = "/assets/Karuppasamy.pdf";
+                                        link.download = "Karuppasamy.pdf"; 
+                                        link.click();
+                                    }}>
+                                    <span>Download CV<ArrowUpRightIcon className="ms-2"/></span>
+                                    <span>Download CV<ArrowUpRightIcon className="ms-2"/></span>
+                                </button>
                             </div>
 
                         </div>

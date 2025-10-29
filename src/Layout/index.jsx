@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import ScrollToTopButton from "../component/ScrollToTopButton";
 // import Breadcrumb from "../component/Breadcrumb";
 
-gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
+// gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
 export default function Layout() {
 
@@ -15,19 +15,19 @@ export default function Layout() {
     const isHome = (location.pathname === '/')
 
 
-    useEffect(() => {
-        const smooth = ScrollSmoother.create({
-            content: "#smooth-content",
-            wrapper: "#smooth-wrapper",
-            smooth: 1,
-            effects: false
-        });
+    // useEffect(() => {
+    //     const smooth = ScrollSmoother.create({
+    //         content: "#smooth-content",
+    //         wrapper: "#smooth-wrapper",
+    //         smooth: 1,
+    //         effects: false
+    //     });
 
-        return () => {
-            smooth.kill();
-        };
+    //     return () => {
+    //         smooth.kill();
+    //     };
 
-    }, []);
+    // }, []);
 
     return (
         <>
